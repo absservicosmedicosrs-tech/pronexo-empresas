@@ -111,11 +111,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .topo__cidade { display: inline-flex; align-items: center; gap: 8px; opacity: .85; }
 @media (max-width: 760px) { .topo__email { display: none !important; } .topo__lista { gap: 4px 18px; } .topo__cidade { font-size: 13px; } }
 @media (max-width: 760px) {
-  .topo .wrap { flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; padding-block: 8px; }
-  .topo__dias { display: none; }
-  .topo__lista, .topo__dir { justify-content: center; align-items: center; flex-wrap: wrap; gap: 6px 18px; }
-  .topo__dir { width: auto; }
-  .topo__cidade { width: 100%; justify-content: center; font-size: 12px; white-space: nowrap; }
+  .topo .wrap { display: flex !important; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; gap: 6px 14px !important; padding-block: 8px; }
+  .topo__dias { display: none !important; }
+  .topo__lista, .topo__dir { display: flex !important; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 14px !important; width: auto; }
+  .topo__cidade { width: 100%; justify-content: center; font-size: 12px !important; white-space: nowrap; }
 }
 
 /* ---------- Cabeçalho ---------- */
