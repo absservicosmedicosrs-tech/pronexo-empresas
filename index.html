@@ -111,10 +111,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .topo__cidade { display: inline-flex; align-items: center; gap: 8px; opacity: .85; }
 @media (max-width: 760px) { .topo__email { display: none !important; } .topo__lista { gap: 4px 18px; } .topo__cidade { font-size: 13px; } }
 @media (max-width: 760px) {
-  .topo .wrap { display: flex !important; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; gap: 6px 14px !important; padding-block: 8px; }
-  .topo__dias { display: none !important; }
-  .topo__lista, .topo__dir { display: flex !important; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 14px !important; width: auto; }
-  .topo__cidade { width: 100%; justify-content: center; font-size: 12px !important; white-space: nowrap; }
+  .topo .wrap { display: flex !important; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; gap: 6px 16px !important; padding-block: 8px; }
+  .topo__dias, .topo__linkedin { display: none !important; }
+  .topo__lista, .topo__dir { display: flex !important; align-items: center; gap: 6px 16px !important; width: auto; }
+  .topo__dir { display: contents !important; }
+  .topo__lista { order: 1; }
+  .topo__dir > a { order: 2; }
+  .topo__cidade { order: 3; width: 100%; justify-content: center; font-size: 12px !important; white-space: nowrap; }
 }
 
 /* ---------- Cabeçalho ---------- */
@@ -1303,7 +1306,7 @@ ul { margin: 0; padding: 0; list-style: none; }
       <span class="topo__dias"><svg class="icon" aria-hidden="true"><use href="#i-factory"/></svg><strong>Medicina Ocupacional Corporativa · Perícias Médicas</strong></span>
       <a class="topo__email" href="mailto:pronexomedicina@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>pronexomedicina@gmail.com</span></a>
     </div>
-    <span class="topo__dir"><a href="https://www.instagram.com/dr.arthurbecker/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Dr. Arthur Becker"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg><span>@dr.arthurbecker</span></a><a href="https://br.linkedin.com/in/arthur-becker-sim%C3%B5es-5a3147331" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn do Dr. Arthur Becker"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a><span class="topo__cidade"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Hortênsias · Encosta da Serra · Sinos · Paranhana</span></span>
+    <span class="topo__dir"><a href="https://www.instagram.com/dr.arthurbecker/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Dr. Arthur Becker"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg><span>@dr.arthurbecker</span></a><a class="topo__linkedin" href="https://br.linkedin.com/in/arthur-becker-sim%C3%B5es-5a3147331" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn do Dr. Arthur Becker"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a><span class="topo__cidade"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Hortênsias · Encosta da Serra · Sinos · Paranhana</span></span>
   </div>
 </div>
 <header class="cabecalho">
