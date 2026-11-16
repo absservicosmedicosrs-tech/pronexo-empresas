@@ -1300,6 +1300,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   .topo__dir > a { order: 2; }
   .topo__cidade, .topo__dir .topo__cidade { display: inline-flex !important; order: 3; width: auto; justify-content: center; font-size: 10.5px !important; white-space: nowrap; }
 }
+
+/* Botão para o sistema no menu */
+.menu__sistema { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--verde); border-radius: 999px; color: var(--verde); font-weight: 600; font-size: .9rem; text-decoration: none; white-space: nowrap; }
+.menu__sistema:hover { background: var(--verde); color: var(--branco); }
 </style>
 <link rel="canonical" href="https://pronexo.med.br/blog.html">
 <meta property="og:url" content="https://pronexo.med.br/blog.html">
@@ -1328,7 +1332,7 @@ ul { margin: 0; padding: 0; list-style: none; }
     </button>
     <nav class="menu" id="menu" aria-label="Menu principal">
       <div class="menu__grupo"><button class="menu__rotulo" type="button" aria-expanded="false" aria-controls="sub-0">Empresas<span class="menu__seta" aria-hidden="true"></span></button><div class="menu__sub" id="sub-0"><a href="index.html#incompany">Medicina in company</a><a href="index.html#readaptacao">Readaptação no chão de fábrica</a><a href="index.html#gestao">Gestão de saúde ocupacional</a><a href="index.html#indicadores">Indicadores</a><a href="index.html#laudos">Laudos e treinamentos</a></div></div><div class="menu__grupo"><button class="menu__rotulo" type="button" aria-expanded="false" aria-controls="sub-1">Perícias<span class="menu__seta" aria-hidden="true"></span></button><div class="menu__sub" id="sub-1"><a href="index.html#pericias">Perícias e assistência técnica</a><a href="index.html#pericias-detalhes">Áreas de atuação</a><a href="index.html#laudos-beneficios">Laudos para benefícios</a></div></div><a href="index.html#protocolo">Protocolo</a><div class="menu__grupo"><button class="menu__rotulo" type="button" aria-expanded="false" aria-controls="sub-3">Tecnologia<span class="menu__seta" aria-hidden="true"></span></button><div class="menu__sub" id="sub-3"><a href="index.html#sistema">Conheça nosso sistema</a><a href="index.html#inteligencia-artificial">Inteligência artificial</a></div></div><div class="menu__grupo"><button class="menu__rotulo" type="button" aria-expanded="false" aria-controls="sub-4">Sobre<span class="menu__seta" aria-hidden="true"></span></button><div class="menu__sub" id="sub-4"><a href="index.html#medico">Dr. Arthur Becker</a><a href="index.html#trajetoria">Trajetória</a><a href="index.html#sobre">A PRONEXO</a><a href="blog.html" aria-current="page">Blog</a></div></div><a href="index.html#contato">Contato</a><a class="btn btn--contorno" href="https://wa.me/5551991813798?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20proposta%20de%20medicina%20ocupacional%20in%20company%20para%20a%20minha%20empresa." target="_blank" rel="noopener noreferrer">Solicitar proposta</a>
-    </nav>
+    <a class="menu__sistema" href="https://sistema.pronexo.med.br" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><span>Acessar sistema</span></a></nav>
   </div>
 </header>
 <main id="conteudo">
